@@ -1,0 +1,255 @@
+:root{
+  --MAIN_COLOR:#ffeaac;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),  url("back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0%;  
+}
+.frame {
+  padding:10%;
+}
+.data {
+  background-color: rgba(0, 0, 0, .45); 
+  height: 240px;
+}
+.panel {
+  width: 100vw;
+  height: 45px;
+  background-color: #17160c;
+  background-color: rgba(0, 0, 0, .75);
+  position: fixed;
+  top: 0;
+  color: rgb(155, 255, 238);
+  font-size: 21px;
+  text-align: center;
+  padding-top:9px;
+  z-index: 3;    
+  display: flex; 
+  align-items: center;
+}
+#header-img {
+   float:left !important;
+   position:relative;
+   margin-left:-70px !important;
+   width: max(25px, 25vw);
+   transform: rotate(270deg);  
+}
+.logo{
+  padding-right:40%;
+  z-index: 2; 
+  font-size: 27px;
+  color: var(--MAIN_COLOR);
+  white-space:nowrap;
+  padding-right:10%;
+  height: 36px;
+}
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+.spaser1{
+  width: 50%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  margin-right: 50px;
+}
+
+nav > ul > li {
+  color: var(--MAIN_COLOR);
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+nav > ul > li:hover {
+  background-color: var(--MAIN_COLOR);
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.video1, .email1, .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  padding: 10px;
+}
+
+.YAY{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-style: none;
+  padding: 10px;
+  color: var(--MAIN_COLOR);
+}
+.main-section{
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  color: var(--MAIN_COLOR);
+}
+#email{
+    border-style: none;
+  padding: 10px;
+  color: var(--MAIN_COLOR);
+}
+.text{
+  color: var(--MAIN_COLOR);
+  padding: 5%;
+  font-size: 20px;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, .45); 
+}
+.info{
+  color: var(--MAIN_COLOR);
+  padding-down: 10%;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .45); 
+}
+legend{
+  text-align: center;
+  margin:0 auto;
+}
+fieldset{
+  background-color: #000;
+  color: var(--MAIN_COLOR);
+  border-color: var(--MAIN_COLOR);
+  font-size: 23px;
+  padding: 3px 6px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  padding: 10px;
+}
+.spase{
+  height: 50px;
+}
+.ticket1{
+  position: relative;
+  height: 60vh;
+  width: 30%;
+background-color: var(--MAIN_COLOR);
+margin: 10px;
+}
+.ticket2{
+  position: relative;
+  height: 60vh;
+  width: 30%;
+background-color: var(--MAIN_COLOR);
+margin: 10px;
+}
+.ticket3{
+  position: relative;
+  height: 60vh;
+  width: 30%;
+background-color: var(--MAIN_COLOR);
+margin: 10px;
+}
+input, textarea {
+  background-color: black;
+  border: 1px solid var(--MAIN_COLOR);
+  color: var(--MAIN_COLOR);
+  text-align: center;
+  width: 300px;
+}
+input[type="submit"] {
+  display: block;
+  width: 100px;
+  font-size: 1.1rem;
+  background-color: black;
+  border-color: var(--MAIN_COLOR);
+}
+::placeholder { 
+  color: var(--MAIN_COLOR);
+}
+@media (max-width: 500px) {
+.body {
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --MAIN_COLOR:#3da93d;
+}
+.info{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.panel{
+  width: 100vw;
+}
+nav > ul {
+  position: absolute;
+  left: 1vw;
+  top: 1px;
+   padding-left: 30px;
+  padding-right: 30px;
+}
+nav > ul {
+
+}
+fieldset{
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.logo {
+  padding: 20000px;
+  left: 1px;
+  top: 1px;
+  z-index: -1;
+}
+#header-img {
+  width: max(5px, 40vw);
+}
+.ticket1{
+  height: 50vh;
+  width: 80%;
+}
+.ticket2{
+  height: 50vh;
+  width: 80%;
+}
+.ticket3{
+  height: 50vh;
+  width: 80%;
+}
+}
