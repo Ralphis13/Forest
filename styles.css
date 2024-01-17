@@ -117,6 +117,9 @@ li > a {
   padding: 10px;
   color: var(--MAIN_COLOR);
 }
+#submit:hover {
+	cursor: pointer;
+}
 .text{
   color: var(--MAIN_COLOR);
   padding: 5%;
