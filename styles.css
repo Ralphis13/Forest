@@ -9,20 +9,46 @@ body{
   background-size: cover;
   background-attachment: fixed;
   margin: 0%;  
+  scrollbar-base-color: var(--MAIN_COLOR);
+  scrollbar-3dlight-color: rgba(0, 0, 0, .5);
+  scrollbar-highlight-color: rgba(0, 0, 0, .5);
+  scrollbar-track-color: rgba(0, 0, 0, .5);
+  scrollbar-arrow-color: var(--MAIN_COLOR);
+  scrollbar-shadow-color: var(--MAIN_COLOR);
+  scrollbar-dark-shadow-color: var(--MAIN_COLOR);
+}
+/* Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
 }
 
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--MAIN_COLOR);
+  border-radius: 6px;
+  border: 3px solid rgba(0, 0, 0, .9);
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--MAIN_COLOR) rgba(0, 0, 0, .9);
+}
 .center-element {
-  text-align: center; /* Устанавливаем текст по центру */
-  position: relative; /* Устанавливаем позицию как относительную */
-  left: 50%; /* Сдвигаем элемент на 50% относительно родительского элемента */
-  transform: translateX(-50%); /* Корректируем сдвиг влево на 50% ширины элемента */
+  text-align: center; 
+  position: relative; 
+  left: 50%; 
+  transform: translateX(-50%); 
 }
 
 .frame {
   padding:10%;
 }
 .data {
-  background-color: rgba(0, 0, 0, .45); 
+  background-color: rgba(0, 0, 0, .5); 
   height: 240px;
 }
 
@@ -45,9 +71,12 @@ body{
 
 .logo {
   font-size: 27px;
-  color: var(--MAIN_COLOR);
+  color: #1b1b32;
   white-space: nowrap;
   height: 36px;
+  background-color: var(--MAIN_COLOR);
+  padding: 0 10px 0 10px;
+  text-align: center;
 }
 .spacer_logo{
 	margin: auto;
@@ -105,19 +134,27 @@ li > a {
   color: var(--MAIN_COLOR);
 }
 #email{
-    border-style: none;
+  border-style: 1px;
   padding: 10px;
   color: var(--MAIN_COLOR);
+  padding: 10px;
 }
+#submit {
+	padding: 10px 0 10px 0;
+}
+
 #submit:hover {
 	cursor: pointer;
+	background-color: var(--MAIN_COLOR);
+    color: #1b1b32;
+    cursor: pointer;
 }
 .text{
   color: var(--MAIN_COLOR);
   padding: 5%;
   font-size: 20px;
   text-align: justify;
-  background-color: rgba(0, 0, 0, .45); 
+  background-color: rgba(0, 0, 0, .5); 
 }
 .info{
   color: var(--MAIN_COLOR);
@@ -128,7 +165,7 @@ li > a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, .45); 
+  background-color: rgba(0, 0, 0, .5); 
 }
 legend{
   text-align: center;
@@ -150,21 +187,29 @@ fieldset{
   justify-content: center;
 }
 .map {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-style: none;
   padding: 10px;
 }
 .spase{
-  height: 50px;
+  height: 30px;
+}
+.title {
+	background-color: var(--MAIN_COLOR);
+	color: #1b1b32;
+	max-width: 150px;
+	margin: auto;
+	padding: 0 20px 0 20px;
+	text-align: center;
 }
 .ticket1{
   position: relative;
   height: 60vh;
   width: 30%;
-background-color: var(--MAIN_COLOR);
-margin: 10px;
+  background-color: var(--MAIN_COLOR);
+  margin: 10px;
 }
 .ticket2{
   position: relative;

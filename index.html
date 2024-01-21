@@ -14,7 +14,7 @@
 	
 	<div class="panell">
 		<div class="pointLAST"></div>
-		<div class="logo">Closer to the forest!</div>
+		<div class="logo">Our Forest!</div>
 
 		<div class="spacer_logo"></div>
 
@@ -49,7 +49,8 @@
       <section class="main-section" id="Goods">
         <div class="animate__animated"> 
 		<div>
-          <header id="title" class="center-element">Goods</header>
+          <header class="title">Goods</header>
+		  <div class="spase"></div>
         </div>
         <div class="text">
           <p>We sell a variety of unique gifts, each of which would make a great gift for you or your family! All our products are environmentally friendly and tested by our state's Quality Department.</p>
@@ -67,7 +68,7 @@
       <div class="spase"></div>
 	  <div class="animate__animated"> 
       <section class="main-section" id="Tickets">
-        <header id="title" class="title">Tickets</header>
+        <header class="title">Tickets</header>
       </section>
       <fieldset>
         <legend>Which one would suit you better?</legend>
@@ -79,7 +80,7 @@
       <div class="spase"></div>
 	  <div class="animate__animated"> 
       <section class="main-section" id="Map">
-        <header id="title" class="title">Map</header>
+        <header class="title">Map</header>
       </section>
 	 
       <div class="map">
@@ -89,7 +90,7 @@
       <div class="spase"></div>
 	  <div class="animate__animated"> 
       <section class="main-section" id="Discounts">
-        <header id="title" class="title">Discounts</header>
+        <header class="title">Discounts</header>
       </section>
       <div class="info">
         <p>You can get discounts on every trip until the end of the year!</p>
@@ -108,35 +109,27 @@
     </div>
 	</div>
 	<script>
-$(document).ready(function() {
-  // Найти все элементы с классом "animate__animated"
-  var elements = $(".animate__animated");
-  
-  // Функция для анимации элементов при скроллинге
-  function animateElements() {
-    elements.each(function(index) {
-      var element = $(this);
-      if (element.hasClass('animate__animated')) {
-        element.css("opacity", 0); // Скрываем элемент
-      }
-    });
-  }
-  
-  // Вызвать функцию при загрузке страницы
-  animateElements();
-  
-  // Используйте Waypoints.js для отслеживания видимых элементов и применения анимации
-  elements.waypoint(function(direction) {
-    if (direction === 'down') {
-      $(this.element).addClass("animate__bounceInUp animate__slow"); // Используйте "animate__flipInX" и "animate__slow"
-      $(this.element).css("opacity", 1); // Показать элемент
-    }
-  }, { offset: '80%' }); // Измените значение offset, чтобы настроить когда анимация должна начаться
-});
-
-	</script>
-
-
-	
+		$(document).ready(function() {
+		  var elements = $(".animate__animated");
+		  
+		  function animateElements() {
+			elements.each(function(index) {
+			  var element = $(this);
+			  if (element.hasClass('animate__animated')) {
+				element.css("opacity", 0); 
+			  }
+			});
+		  }
+		  
+		  animateElements();
+		  
+		  elements.waypoint(function(direction) {
+			if (direction === 'down') {
+			  $(this.element).addClass("animate__bounceInUp animate__slow"); 
+			  $(this.element).css("opacity", 1); 
+			}
+		  }, { offset: '80%' });
+		});
+	</script>	
   </body>
 </html>
