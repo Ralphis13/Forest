@@ -111,7 +111,9 @@ li > a {
   border-style: none;
   padding: 10px;
 }
-
+.video1{
+	padding: 0;
+}
 .YAY{
   display: flex;
   align-items: center;
@@ -259,6 +261,9 @@ input[type="submit"] {
 }
 :root{
   --MAIN_COLOR:#3da93d;
+}
+.frame {
+  padding:5%;
 }
 .info{
   padding-left: 30px;
