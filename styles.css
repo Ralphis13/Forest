@@ -51,7 +51,6 @@ body{
   background-color: rgba(0, 0, 0, .5); 
   height: 240px;
 }
-
 .panell {
   display: flex;
   height: 45px;
@@ -140,14 +139,25 @@ li > a {
   padding: 10px;
 }
 #submit {
-	padding: 10px 0 10px 0;
+  padding: 10px 0 10px 0;
+  background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 55%, 
+  var(--MAIN_COLOR) 75.52%, rgba(100, 181, 239, 0) 100%);
+  background-repeat: no-repeat;
+  animation: bg-move linear 7s infinite;
 }
-
 #submit:hover {
-	cursor: pointer;
-	background-color: var(--MAIN_COLOR);
-    color: #1b1b32;
-    cursor: pointer;
+  cursor: pointer;
+  background-color: var(--MAIN_COLOR);
+  color: #1b1b32;
+  cursor: pointer;
+}
+@-webkit-keyframes bg-move {
+  0%   { background-position: -500px 0; }
+  100% { background-position: 1000px 0; }
+}
+@keyframes bg-move {
+  0%   { background-position: -500px 0; }
+  100% { background-position: 1000px 0; }
 }
 .text{
   color: var(--MAIN_COLOR);
